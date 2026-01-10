@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-.background {
+.container {
   background-size: 40px 40px;
   background-image:
     linear-gradient(to right, rgba(128, 128, 128, 0.08) 1px, transparent 1px),
@@ -64,15 +64,6 @@ img {
 } 
 .landing hr {
     background-color: #263A84;
-}
-
-.landingtext {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height:300px;
-    max-width:500px;
-    padding: 50px;
 }
 
 .landing h1 {
@@ -221,4 +212,42 @@ form {
 
 footer {
     padding: 25px;
+}
+
+.col-50{
+    width: 50%;
+    padding: 20px;
+}
+.col-100{
+    width: 100%;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    width: 100%;    
+    padding: 20px;
+}
+.profile-picture{
+    display: flex;
+}
+.d-flex{
+    display: flex;
+}
+.content-end{
+    justify-content: end;
+}
+.landing{
+    border-left: 3px solid #263A84;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-50{
+        width: 100%;
+    }    
+    .profile-picture{
+        margin: auto;
+    }
 }
