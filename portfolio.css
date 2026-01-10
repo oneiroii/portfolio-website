@@ -1,0 +1,224 @@
+/* fonts */
+.tiny5-regular {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.background {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(128, 128, 128, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.08) 1px, transparent 1px);
+}
+/*header display*/
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    padding: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: #263A84;
+    font-family: roboto, arial;
+    padding:10px;
+}
+/*center all*/
+main {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+h1 {
+    font-family: tiny5, Times New Roman;
+    color: #263A84;
+}
+p{
+    font-family: Inter, Roboto;
+    color:#263A84;
+}
+
+h2{
+    font-family: tiny5, Times New Roman;
+    font-weight: normal;
+}
+img {
+    max-width: 300px;
+}
+
+/*introduction part */
+.landing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.landing hr {
+    background-color: #263A84;
+}
+
+.landingtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height:300px;
+    max-width:500px;
+    padding: 50px;
+}
+
+.landing h1 {
+    padding-bottom: 20px;
+}
+
+span {
+    color: #2455B5;
+    background-color: #D5E3F1;
+    font-weight: bold;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+}
+.star img {
+    height: 16px;
+    width: 16px;
+    padding-left: 10px;
+}
+
+/*buttons */
+
+button {
+    font-family: Inter, Roboto;
+}
+.landingtext button {
+    width: 125px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.buttonlayout {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+#resume {
+    background-color: #263A84;
+    color: white;
+    border-style: none;
+}
+
+#contactbutton {
+    background-color: white;
+    border-color: #263A84;
+    color: #263A84;
+    border-style: solid;
+}
+/*About me*/
+.aboutme {
+    padding-top: 30px
+}
+/*skills display*/
+
+ul {
+    list-style: none;
+    color:#263A84;
+    font-family: Inter, Roboto;
+}
+li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("star.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    
+}
+.skills {
+    padding-top: 30px;
+}
+
+.skill_list {
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+}
+
+.skills li {
+    padding: 10px;
+}
+
+/* Eductation */
+.education {
+    padding-top: 30px;
+}
+.education hr {
+    height: 3px;
+    background-color: #263A84;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    font-family: Inter, Roboto;
+    color:#263A84;
+    padding: 10px 0px;
+    text-align: left;
+    border-bottom: 1px solid #263A84;
+    font-size: 90%;
+}
+
+.courses, .upcomingschedule {
+    display: flex;
+    justify-content: space-between;
+}
+
+#school {
+    font-weight: bold;
+    text-align: right;
+    padding-left: 50px;
+}
+
+#course {
+    padding-right: 30px;
+    text-align: left;
+}
+
+/*work display*/
+.work {
+    padding-top: 30px;
+}
+
+/*contact form*/
+
+.contact {
+    padding-top: 30px;
+}
+
+form {
+    font-family: Inter, Roboto;
+    color: #263A84;
+}
+
+#submit {
+    background-color: #263A84;
+    color: white;
+    border-style: none;
+}
+
+footer {
+    padding: 25px;
+}
