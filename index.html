@@ -1,167 +1,291 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Esmee Wijngaarde</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tiny5&display=swap');
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tiny5&display=swap');
+    </style>
     <link rel="stylesheet" href="portfolio.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<!--Header content-->
 <body>
-    <header>
-        <p>Portfolio Esmee Wijngaarde</p>
-        <nav>
-        <a href="">ABOUT ME</a>
-        <a href="">WORK</a>
-        <a href="">EDUCATION</a>
-        <a href="">CONTACT</a>
+    <!-- Header -->
+    <header class="header">
+        <p class="header__logo">Portfolio Esmee Wijngaarde</p>
+        <nav class="header__nav">
+            <a href="#about" class="header__link">ABOUT ME</a>
+            <a href="#work" class="header__link">WORK</a>
+            <a href="#education" class="header__link">EDUCATION</a>
+            <a href="#contact" class="header__link">CONTACT</a>
         </nav>
     </header>
-    <!--Main content, outlining in center-->
+
+    <!-- Main Content -->
     <div class="container">
-    <main>
-    <!--Start page content-->
-    <div class="row landing">
-        <div class="col-50 landingtext">
-            <div class="star">
-                <h2>Portfolio 2026</h2>
-                <img src="star.png">
+        <main class="container__inner">
+
+            <!-- Hero Section -->
+            <section class="row section--hero">
+                <div class="col--50">
+                    <div class="section__subtitle">
+                        <h2>Portfolio 2026</h2>
+                        <img src="star.png" alt="">
+                    </div>
+                    <h1 class="section__title">Software Engineer</h1>
+                    <p>
+                        Hi I'm Esmee! I'm a creative turning
+                        <span class="text--highlight">software engineer</span> from the Netherlands
+                        passionate about diving into the world of <b>tech</b>
+                    </p>
+                    <div class="btn-group">
+                        <button id="btn-resume" class="btn btn--primary">Resume</button>
+                        <button id="btn-contact" class="btn btn--secondary">Contact me</button>
+                    </div>
                 </div>
-                <h1>Software Engineer</h1>
-                <p>Hi I'm Esmee! I'm a creative turning <span>software engineer</span> from the Netherlands 
-                    passionate about diving into the world of <b>tech</b></p>
-                <div class="buttonlayout">
-                    <button id="resume">Resume</button>
-            <button id="contactbutton">Contact me</button>
-            </div>
-        </div>
-        <div class="col-50 d-flex content-end">
-            <img class="profile-picture"  src="C:\Users\wijng\Documents\cookie jar\portfolio\prof foto.png">
-        </div>
-    </div>
-    <!--About me-->
-    <div class="aboutme">
-        <h1>About</h1>
-        <p>
-            I’m a 26-year-old creative who, after getting her <b>Associate Degree in Digital Tech and Media</b>, 
-            decided to make a career switch to software engineer. Through <span>HvA Make IT Work</span> I get the change to 
-            develop myself. Next to the <b>Winter School</b> program I follow at Make IT Work. In this winterschool 
-            I start out with the first 3 classes of the full time study which includes: Programming, database design 
-            and building. In april 2026 I will be starting the full time <span>Software Engineer retraining</span>, where I will follow an intentsive course including Java programming, OOP, Testing and Fullstack Web Development.
-In my spare time I like to read, write and game. 
-        </p>
-    </div>
-    <!--Skills set-->
-    <div class="skills">
-        <h1>Skills</h1>
-        <div class="skill_list">
-        <ul>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>HTML</li>
-        </ul>
-        <ul>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>CSS</li>
-        </ul>
-        <ul>
-            <li>Python</li>
-        </ul>
-        </div>
-    </div>
-    <!--Education content-->
-    <div class="education">
-        <h1>Education</h1>
-        <p> Hva Make IT Work and other courses</p>
-        <hr>
-        <div class="courses">
-            <table>
-                <tr>
-                    <td id="course">AD Digitale Techniek & Media</td>
-                    <td id="school">Hogeschool Utrecht</td>
-                </tr>
-                <tr>
-                    <td id="course">Python for Non-Programmers</td>
-                    <td id="school">Nick Walter</td>
-                </tr>
-                </table>
-                <table>
-                <tr>
-                    <td id="course">Basis Python Programming</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-                <tr>
-                    <td id="course">Databases Design and Build</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-            </table>
-            </div>
-        <hr>
-        <p>Upcoming April 2026 Fulltinme Software Engineer Program Make IT Work</p>
-        <div class="upcomingschedule">
-            <table>
-                <tr>
-                    <td id="course">Basic java Programming</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-                <tr>
-                    <td id="course">Advanced Java</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-                <tr>
-                    <td id="course">Fullstack Web Development</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-                </table>
-                <table>
-                <tr>
-                    <td id="course">Testing Fundamentals</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-                <tr>
-                    <td id="course">Backend Techniques</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-                <tr>
-                    <td id="course">Frontend Techniques</td>
-                    <td id="school">HvA Make IT Work</td>
-                </tr>
-            </table>
-            </div>
-        <hr>
-    </div>
-    <!--Work content-->
-    <div class="work">
-        <h1>Work</h1>
-        <p>This website!</p>
-        <p>To be continued...</p>
+                <div class="col--50 flex flex--end">
+                    <img class="profile-picture" src="introductie-foto.png" alt="Profile picture of Esmee Wijngaarde with description">
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h1 class="section__title">About</h1>
+                <p>
+                    I'm a 26-year-old creative born and raised in the Netherlands who, after getting her <b>Associate Degree in Digital Tech and Media</b>,
+                    decided to make a career switch to software engineer. Through <span class="text--highlight">HvA Make IT Work</span> I get the chance to
+                    develop myself. Next to the <b>Winter School</b> program I follow at Make IT Work. In this winterschool
+                    I start out with the first 3 classes of the full time study which includes: Programming, database design
+                    and building. In April 2026 I will be starting the full time <span class="text--highlight">Software Engineer retraining</span>, where I will follow an intensive course including Java programming, OOP, Testing and Fullstack Web Development.
+                    In my spare time I like to read, write and game.
+                </p>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <span class="info-card__icon">📧</span>
+                        <span class="info-card__value">wijngaardeesmee@gmail.com</span>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-card__icon">📍</span>
+                        <span class="info-card__value">Zaandam, Netherlands</span>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-card__icon">📱</span>
+                        <span class="info-card__value">+31 6 47647653</span>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-card__icon">🎂</span>
+                        <span class="info-card__value">26 years</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h1 class="section__title">Skills</h1>
+                <div class="skill-list">
+                    <ul>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                    </ul>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+            </section>
+
+    
+    <!-- Experience -->
+    <!-- Education & Experience Section -->
+<section id="education" class="section">
+    <h1 class="section__title">Experience & Education</h1>
+    
+    <!-- Experience -->
+    <hr class="section__divider">
+    <p>Experience</p>
+    <div class="table-group">
+        <table class="table">
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">
+                    Social Media Stagiare
+                    <div class="table__cell--subtitle">2021 - 2022</div>
+                </td>
+                <td class="table__cell table__cell--value">Coebergh PR & Communicatie</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">
+                    Video Editor & Warehouse worker
+                    <div class="table__cell--subtitle">2022 - 2025</div>
+                </td>
+                <td class="table__cell table__cell--value">Vitals Voedingssupplementen</td>
+            </tr>
+        </table>
     </div>
 
-    <!--Concact-->
-    <div class="work">
-        <form>
-        <h1>Contact</h1>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="lname">email</label><br>
-        <input type="email" id="email" name="email"><br>
-         <label for="lname">Message</label><br>
-        <input type="text" id="textfield" name="textfield"><br>
-        <input type="submit" value="Submit" id="submit">
-        </form>
+    <hr class="section__divider">
+
+    <!-- Education -->
+    <p>HvA Make IT Work and other courses</p>
+
+    <div class="table-group">
+        <table class="table">
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">
+                    AD Digitale Techniek & Media
+                    <div class="table__cell--subtitle">2020 - 2022</div>
+                </td>
+                <td class="table__cell table__cell--value">Hogeschool Utrecht</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">
+                    Python for Non-Programmers
+                    <div class="table__cell--subtitle">2024</div>
+                </td>
+                <td class="table__cell table__cell--value">Nick Walter</td>
+            </tr>
+        </table>
+        <table class="table">
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">
+                    Basis Python Programming
+                    <div class="table__cell--subtitle">2025</div>
+                </td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">
+                    Databases Design and Build
+                    <div class="table__cell--subtitle">2025</div>
+                </td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr class="section__divider">
+    <p>Upcoming April 2026 Fulltime Software Engineer Program Make IT Work</p>
+
+    <div class="table-group">
+        <table class="table">
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">Basic Java Programming</td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">Advanced Java</td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">Fullstack Web Development</td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+        </table>
+        <table class="table">
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">Testing Fundamentals</td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">Backend Techniques</td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+            <tr class="table__row">
+                <td class="table__cell table__cell--label">Frontend Techniques</td>
+                <td class="table__cell table__cell--value">HvA Make IT Work</td>
+            </tr>
+        </table>
+    </div>
+    <hr class="section__divider">
+</section>
+
+            <!-- Work Section -->
+<section id="work" class="section">
+    <h1 class="section__title">Work</h1>
+    
+    <div class="project-card">
+        <div class="project-card__image">
+            <img src="website-screenshot.png" alt="Screenshot of portfolio website">
         </div>
-    </main>
- </div>
- <footer> 
-    <p>This is my website and this is my footer (temporarily)</p>
- </footer>
+        <div class="project-card__content">
+            <h2 class="project-card__title">Portfolio Website</h2>
+            <p class="project-card__description">
+                My first self-made personal portfolio website built with HTML, CSS, and JavaScript! 
+                This image shows my first design with Figma with the inspiration right next to it. 
+                The design was based on the aesthetics of a K-POP group named 'NewJeans'.
+            </p>
+            <div class="project-card__tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://github.com/oneiroii/portfolio-website" target="_blank" class="project-card__link">
+                <span class="project-card__link-icon">⚡</span>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+    
+    <p style="margin-top: 30px;">To be continued...</p>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h1 class="section__title">Contact</h1>
+                <form class="form" id="contact-form" action="https://formspree.io/f/xbddgqgg" method="POST">
+                    <input type="text" name="_gotcha" class="form__honeypot">
+
+                    <div class="form__row">
+                        <div class="form__fields">
+                            <div class="form__group">
+                                <label class="form__label" for="fname">First name</label>
+                                <input class="form__input" type="text" id="fname" name="fname" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="lname">Last name</label>
+                                <input class="form__input" type="text" id="lname" name="lname" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="email">Email</label>
+                                <input class="form__input" type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="message">Message</label>
+                                <textarea class="form__input form__input--textarea" id="message" name="message" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Captcha -->
+                        <div class="form__captcha">
+                            <div class="captcha" id="captcha">
+                                <div class="captcha__header">
+                                    <span class="captcha__icon">✓</span>
+                                    <span class="captcha__title">Quick verification</span>
+                                </div>
+                                <div class="captcha__challenge" id="captcha-challenge"></div>
+                                <div class="captcha__options" id="captcha-options"></div>
+                                <div class="captcha__status" id="captcha-status"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="form-status" class="form__status"></div>
+                    <button type="submit" class="btn btn--primary" id="btn-submit">Submit</button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Esmee Wijngaarde Portfolio 2026. </p>
+    </footer>
+
+    <script src="portfolio.js"></script>
 </body>
 </html>
